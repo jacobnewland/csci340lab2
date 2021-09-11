@@ -36,11 +36,11 @@ $(document).ready(function() {
   $('#clicker').click(function() {
     $.ajax({
       dataType: "json",
-      url: "https://random.dog/woof.json",
+      url: "https://random-d.uk/api/v2/quack",
       success: function(results) {
         console.log(results["url"]);
         if (results["url"].endsWith(".mp4")) {
-          $('#duck').attr("src", "images/blank.png");
+          $('#duck').attr("src", "Psyduck.png");
         } else {
           $('#duck').attr("src", results["url"]);
         }
