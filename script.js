@@ -40,7 +40,7 @@ $(document).ready(function() {
       success: function(results) {
         console.log(results["url"]);
         if (results["url"].endsWith(".mp4")) {
-          $('#dog').attr("src", "images/blank.png");
+          $('#duck').attr("src", "images/blank.png");
         } else {
           $('#dog').attr("src", results["url"]);
         }
