@@ -42,7 +42,7 @@ $(document).ready(function() {
         if (results["url"].endsWith(".mp4")) {
           $('#duck').attr("src", "images/blank.png");
         } else {
-          $('#dog').attr("src", results["url"]);
+          $('#duck').attr("src", results["url"]);
         }
       },
       error: function(xhr,status,error) {
