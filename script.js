@@ -11,5 +11,22 @@ $(document).ready(function() {
         console.log(error);
       }
     });
+    $(document).ready(function() {
+  $('#clicker').click(function() {
+    $.ajax({
+      dataType: "json",
+      url: "https://random-d.uk/api",
+      success: function(results) {
+        console.log(results["url"]);
+
+          $('#duck').attr("src", results["url"]);
+
+      },
+      error: function(xhr,status,error) {
+        console.log(error);
+      }
+    });
+  });
+});
   });
 });
