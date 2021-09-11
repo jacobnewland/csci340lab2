@@ -36,7 +36,7 @@ $(document).ready(function() {
   $('#clicker').click(function() {
     $.ajax({
       dataType: "json",
-      url: "https://random-d.uk/",
+      url: "https://random-d.uk/api/random",
       success: function(results) {
         console.log(results["url"]);
         if (results["url"].endsWith(".mp4")) {
