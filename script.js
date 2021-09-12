@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#clicker').click(function() {
+  $('#duckclicker').click(function() {
     $.ajax({
       dataType: "json",
       url: "https://cors-anywhere.herokuapp.com/https://random-d.uk/api/random",  //https://cors-anywhere.herokuapp.com/corsdemo
@@ -14,9 +14,15 @@ $(document).ready(function() {
       error: function(xhr,status,error) {
         console.log(error);
       }
+
+          });
+        });
+      });
+$(document).ready(function() {
+        $('#quoteclicker').click(function() {
       $.ajax({
             dataType: "json",
-            url: "https://cors-anywhere.herokuapp.com/corsdemo/https://breaking-bad-quotes.herokuapp.com/v1/quotes", //https://cors-anywhere.herokuapp.com/corsdemo
+            url: "https://github.com/Rob--W/cors-anywhere/https://breaking-bad-quotes.herokuapp.com/v1/quotes", //https://github.com/Rob--W/cors-anywhere/
             success: function(results) {
               $('.quote').text(results["quoteText"]);
             },
@@ -24,7 +30,5 @@ $(document).ready(function() {
               console.log(error);
             }
         });
-
-    });
-  });
+      });
 });
