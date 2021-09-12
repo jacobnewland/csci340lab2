@@ -22,9 +22,9 @@ $(document).ready(function() {
         $('#quoteclicker').click(function() {
       $.ajax({
             dataType: "json",
-            url: "https://github.com/Rob--W/cors-anywhere/https://breaking-bad-quotes.herokuapp.com/v1/quotes", //https://github.com/Rob--W/cors-anywhere/
+            url: "https://movie-quote-api.herokuapp.com/v1/quote/?censored",
             success: function(results) {
-              $('.quote').text(results["quoteText"]);
+              $('.quote').text(results["quote"]);
             },
             error: function(xhr,status,error) {
               console.log(error);
