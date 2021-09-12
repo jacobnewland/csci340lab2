@@ -19,7 +19,7 @@ $(document).ready(function() {
         });
       });
 $(document).ready(function() {
-        $('#quoteclicker').click(function() {
+    $('#quoteclicker').click(function() {
       $.ajax({
             dataType: "json",
             url: "https://movie-quote-api.herokuapp.com/v1/quote/?censored",
